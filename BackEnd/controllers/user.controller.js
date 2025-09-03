@@ -9,7 +9,7 @@ export const register = async (req, res) => {
     const { fullname, email, phoneNumber, password, role } = req.body;
     const file = req.file;
 
-    console.log("req.file:", file);
+    // console.log("req.file:", file);
 
     if (!fullname || !email || !phoneNumber || !password || !role || !file) {
       return res.status(400).json({
